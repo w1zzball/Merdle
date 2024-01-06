@@ -1,0 +1,14 @@
+C:\Users\aaron\Coding\C#\Merdle\Merdle\bin\Debug\net7.0\Merdle.exe
+C:\Users\aaron\Coding\C#\Merdle\Merdle\bin\Debug\net7.0\Merdle.deps.json
+C:\Users\aaron\Coding\C#\Merdle\Merdle\bin\Debug\net7.0\Merdle.runtimeconfig.json
+C:\Users\aaron\Coding\C#\Merdle\Merdle\bin\Debug\net7.0\Merdle.dll
+C:\Users\aaron\Coding\C#\Merdle\Merdle\bin\Debug\net7.0\Merdle.pdb
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.AssemblyInfoInputs.cache
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.AssemblyInfo.cs
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.csproj.CoreCompileInputs.cache
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.dll
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\refint\Merdle.dll
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.pdb
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\Merdle.genruntimeconfig.cache
+C:\Users\aaron\Coding\C#\Merdle\Merdle\obj\Debug\net7.0\ref\Merdle.dll
