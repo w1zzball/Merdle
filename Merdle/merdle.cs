@@ -8,11 +8,11 @@ string dictionaryPath = @".\dictionary.txt";//list of valid words
 string solution;
 int defaultWordLength = 5;
 Card[] guessCards, solutionCards;
-string guess;
 bool correctAnswer = false;
 Random random = new Random();
 int numberOfGuesses = 6;
 int guessCounter;
+
 
 List<string> generateWordList(int wordLength, string filePath)
 {
@@ -20,8 +20,7 @@ List<string> generateWordList(int wordLength, string filePath)
     List<string> listOfWords = new List<string>();
     if (!File.Exists(filePath))
     {
-        Console.WriteLine("FILE READ ERROR");
-        return null;
+        throw new ArgumentException("FILE READ ERROR- could not open: " + filePath);
     }
     else
     {
@@ -41,21 +40,20 @@ string takeGuess(int wordLength, List<string> dictionary)
 {
     bool validGuess = false;
     string guess;
-    while (!validGuess)
+    do
     {
         Console.Write("Guess[" + guessCounter + "/" + numberOfGuesses + "]: ");
-        guess = Console.ReadLine();
+        guess = Console.ReadLine()!;
         if (guess.Length == wordLength && dictionary.Contains(guess))
         {
             validGuess = true;
-            return guess;
         }
         else
         {
             Console.WriteLine("invalid guess");
         }
-    }
-    return null;
+    }while (!validGuess);
+    return guess;
 }
 
 void checkCards(Card[] solutionCard, Card[] cardToCheck)
@@ -110,7 +108,7 @@ int getWordLength()
     string lengthInput;
     bool isValid = false;
     Console.Write("word length [1-8]: ");
-    lengthInput = Console.ReadLine();
+    lengthInput = Console.ReadLine()!;
     isValid = int.TryParse(lengthInput, out int value);
     if (0 < value && value < 9)
     {
@@ -144,7 +142,7 @@ solution = solutionsList[random.Next(0, solutionsList.Count)];
 do
 {
     correctAnswer = true;
-    guess = takeGuess(wordLength, Dictionary);//checks for valid word
+    string guess = takeGuess(wordLength, Dictionary);//checks for valid word
     guessCards = stringToCards(guess, wordLength);
     solutionCards = stringToCards(solution, wordLength);
     checkCards(solutionCards, guessCards);
